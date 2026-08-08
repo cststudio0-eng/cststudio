@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yohan Castella — Photographe & Vidéaste Sportif | CST STUDIO</title>
+<meta name="description" content="Yohan Castella (CST STUDIO) — photographe et vidéaste basé en France, spécialisé en reportage sportif : football, basketball, tennis, musique et entreprise. Disponible pour vos missions partout en France.">
+<meta name="keywords" content="photographe sportif, vidéaste sportif, photographe football, photographe basketball, photographe tennis, reportage sportif France, CST STUDIO, Yohan Castella, photographe événementiel, community manager sport">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Yohan Castella — CST STUDIO">
+<link rel="canonical" href="https://www.cststudio.fr/">
+
+<!-- Open Graph / réseaux sociaux -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CST STUDIO">
+<meta property="og:title" content="Yohan Castella — Photographe & Vidéaste Sportif | CST STUDIO">
+<meta property="og:description" content="Photographe et vidéaste basé en France, spécialisé en reportage sportif (football, basketball, tennis), musique et entreprise. Disponible pour vos missions partout en France.">
+<meta property="og:image" content="assets/photos/hero/hero-home.jpg">
+<meta property="og:locale" content="fr_FR">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Yohan Castella — Photographe & Vidéaste Sportif | CST STUDIO">
+<meta name="twitter:description" content="Photographe et vidéaste basé en France, spécialisé en reportage sportif, musique et entreprise.">
+<meta name="twitter:image" content="assets/photos/hero/hero-home.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "CST STUDIO",
+  "founder": {
+    "@type": "Person",
+    "name": "Yohan Castella",
+    "jobTitle": "Photographe & Vidéaste"
+  },
+  "description": "Photographe et vidéaste basé en France, spécialisé en reportage sportif (football, basketball, tennis), musique et entreprise.",
+  "areaServed": "France",
+  "knowsAbout": ["Photographie sportive", "Vidéographie", "Community management", "Photographie corporate", "Photographie événementielle"],
+  "email": "cststudio.0@gmail.com",
+  "sameAs": [
+    "https://www.instagram.com/cst.studioo/",
+    "https://www.linkedin.com/in/yohan-castella-2269b1241/",
+    "https://www.facebook.com/yohan.cst"
+  ]
+}
+</script>
+<style>
+  :root{
+    --bg:#ffffff;
+    --bg-soft:#f6f6f7;
+    --ink:#0e0e11;
+    --ink-soft:#68686f;
+    --border:#e8e8ea;
+    --red:#c8102e;
+    --red-dark:#8f0c20;
+    --red-soft:#fbeaec;
+    --radius:20px;
+    --max:1200px;
+    --nav-h:78px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{-webkit-font-smoothing:antialiased;}
+  body{
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    color:var(--ink);
+    background:var(--bg);
+    line-height:1.5;
+    overflow-x:hidden;
+  }
+  a{text-decoration:none;color:inherit;}
+  ul{list-style:none;}
+  img{max-width:100%;display:block;}
+  button{font-family:inherit;}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 28px;}
+  .display{font-family:'Bebas Neue',Impact,sans-serif;letter-spacing:.01em;}
+
+  ::selection{background:var(--red);color:#fff;}
+
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    padding:14px 26px;border-radius:100px;font-weight:600;font-size:15px;
+    border:1px solid transparent;cursor:pointer;transition:all .3s cubic-bezier(.2,.8,.2,1);
+    white-space:nowrap;
+  }
+  .btn-primary{background:var(--red);color:#fff;}
+  .btn-primary:hover{background:var(--red-dark);transform:translateY(-2px);}
+  .btn-ghost{background:transparent;color:var(--ink);border-color:var(--border);}
+  .btn-ghost:hover{border-color:var(--ink);transform:translateY(-2px);}
+  .btn-light{background:rgba(255,255,255,.14);color:#fff;border-color:rgba(255,255,255,.35);backdrop-filter:blur(6px);}
+  .btn-light:hover{background:#fff;color:var(--ink);}
+
+  /* CUSTOM CURSOR */
+  .cursor-dot, .cursor-ring{
+    position:fixed;top:0;left:0;pointer-events:none;z-index:9999;
+    border-radius:50%;transform:translate(-50%,-50%);
+  }
+  .cursor-dot{width:7px;height:7px;background:var(--red);transition:opacity .2s;}
+  .cursor-ring{width:34px;height:34px;border:1.5px solid rgba(200,16,46,.5);transition:transform .18s ease-out,opacity .2s, width .25s, height .25s, border-color .25s;}
+  .cursor-ring.grow{width:60px;height:60px;border-color:rgba(200,16,46,.9);}
+  body.has-cursor, body.has-cursor a, body.has-cursor button{cursor:none;}
+
+  /* NAV */
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:500;
+    height:var(--nav-h);display:flex;align-items:center;
+    background:rgba(255,255,255,.82);backdrop-filter:blur(14px);
+    border-bottom:1px solid var(--border);
+    transition:background .4s ease, border-color .4s ease;
+  }
+  header.on-dark{background:transparent;border-bottom-color:transparent;}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;width:100%;}
+  .logo{display:flex;flex-direction:column;line-height:1;cursor:pointer;}
+  .logo b{font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:.04em;color:var(--ink);transition:color .4s;}
+  .logo span{font-size:9.5px;letter-spacing:.18em;color:var(--ink-soft);text-transform:uppercase;transition:color .4s;}
+  header.on-dark .logo b{color:#fff;}
+  header.on-dark .logo span{color:rgba(255,255,255,.7);}
+  .logo .dot{color:var(--red);}
+
+  .nav-links{display:flex;gap:8px;align-items:center;}
+  .nav-links a{
+    position:relative;font-size:14px;font-weight:600;color:var(--ink-soft);
+    padding:9px 16px;border-radius:100px;transition:color .3s;
+  }
+  header.on-dark .nav-links a{color:rgba(255,255,255,.78);}
+  .nav-links a:hover{color:var(--ink);}
+  header.on-dark .nav-links a:hover{color:#fff;}
+  .nav-links a.active{color:var(--ink);}
+  header.on-dark .nav-links a.active{color:#fff;}
+  .nav-links a.active::after{
+    content:"";position:absolute;left:16px;right:16px;bottom:4px;height:2px;background:var(--red);border-radius:2px;
+  }
+  .nav-cta{display:flex;align-items:center;gap:12px;}
+  .menu-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:6px;}
+  .menu-toggle span{width:22px;height:2px;background:var(--ink);border-radius:2px;transition:background .3s;}
+  header.on-dark .menu-toggle span{background:#fff;}
+  header.on-dark .nav-cta .btn-ghost{color:#fff;border-color:rgba(255,255,255,.45);}
+  header.on-dark .nav-cta .btn-ghost:hover{background:#fff;color:var(--ink);border-color:#fff;}
+
+  /* PAGES */
+  .page{display:none;}
+  .page.active{display:block;}
+  .page-inner{padding-top:var(--nav-h);}
+
+  section{padding:100px 28px;}
+  .section-tight{padding:70px 28px;}
+  .section-head{max-width:640px;margin:0 auto 56px;}
+  .section-head.center{text-align:center;margin-left:auto;margin-right:auto;}
+  .tag{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:12.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--red);margin-bottom:18px;
+  }
+  .tag::before{content:"";width:16px;height:2px;background:var(--red);display:inline-block;}
+  .section-head h2{font-size:clamp(30px,4.2vw,48px);font-weight:800;letter-spacing:-0.02em;margin-bottom:16px;}
+  .section-head p{font-size:17px;color:var(--ink-soft);}
+
+  /* reveal (déclenché au scroll) */
+  .reveal{opacity:0;transform:translateY(38px) scale(.97);transition:opacity .9s cubic-bezier(.16,1,.3,1), transform .9s cubic-bezier(.16,1,.3,1);}
+  .reveal.in{opacity:1;transform:translateY(0) scale(1);}
+
+  /* petit trait qui se dessine sous les tags quand le bloc apparaît */
+  .tag::before{transition:width .5s ease .25s;}
+  .reveal .tag::before{width:0;}
+  .reveal.in .tag::before{width:16px;}
+
+  /* décalages en cascade par groupe */
+  .gallery-grid .gallery-item:nth-child(1){transition-delay:.02s}
+  .gallery-grid .gallery-item:nth-child(2){transition-delay:.06s}
+  .gallery-grid .gallery-item:nth-child(3){transition-delay:.10s}
+  .gallery-grid .gallery-item:nth-child(4){transition-delay:.14s}
+  .gallery-grid .gallery-item:nth-child(5){transition-delay:.18s}
+  .gallery-grid .gallery-item:nth-child(6){transition-delay:.22s}
+  .gallery-grid .gallery-item:nth-child(7){transition-delay:.26s}
+  .gallery-grid .gallery-item:nth-child(8){transition-delay:.30s}
+  .gallery-grid .gallery-item:nth-child(9){transition-delay:.34s}
+  .gallery-grid .gallery-item:nth-child(10){transition-delay:.38s}
+  .gallery-grid .gallery-item:nth-child(11){transition-delay:.42s}
+  .gallery-grid .gallery-item:nth-child(n+12){transition-delay:.46s}
+
+  .cat-grid .cat-card:nth-child(1){transition-delay:.03s}
+  .cat-grid .cat-card:nth-child(2){transition-delay:.09s}
+  .cat-grid .cat-card:nth-child(3){transition-delay:.15s}
+  .cat-grid .cat-card:nth-child(4){transition-delay:.21s}
+  .cat-grid .cat-card:nth-child(5){transition-delay:.27s}
+  .cat-grid .cat-card:nth-child(6){transition-delay:.33s}
+  .cat-grid .cat-card:nth-child(n+7){transition-delay:.39s}
+
+  .cat-grid-mini .cat-card:nth-child(1){transition-delay:.04s}
+  .cat-grid-mini .cat-card:nth-child(2){transition-delay:.12s}
+  .cat-grid-mini .cat-card:nth-child(3){transition-delay:.20s}
+
+  .about-grid .about-text.reveal{transition-delay:.12s}
+  .home-intro .home-intro-text.reveal{transition-delay:.12s}
+
+  /* ============ HOME ============ */
+  .hero-home{
+    position:relative;min-height:100vh;display:flex;flex-direction:column;justify-content:flex-end;
+    overflow:hidden;color:#fff;
+  }
+  .hero-home .hero-bg{
+    position:absolute;inset:0;
+    background:url('assets/photos/hero/hero-home.jpg') center 15%/cover no-repeat;
+  }
+  .hero-home .hero-bg::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(180deg, rgba(10,6,8,.35) 0%, rgba(10,6,8,.25) 35%, rgba(10,6,8,.92) 100%);
+  }
+  .hero-home-content{position:relative;padding:0 28px 76px;max-width:var(--max);margin:0 auto;width:100%;}
+  .kicker{
+    display:inline-flex;align-items:center;gap:9px;background:rgba(255,255,255,.12);
+    border:1px solid rgba(255,255,255,.28);backdrop-filter:blur(6px);
+    padding:7px 16px;border-radius:100px;font-size:13px;font-weight:600;margin-bottom:28px;
+  }
+  .kicker i{width:7px;height:7px;border-radius:50%;background:var(--red);display:inline-block;}
+  .kinetic{font-family:'Bebas Neue',sans-serif;font-size:clamp(56px,11vw,148px);line-height:.92;letter-spacing:.01em;}
+  .kinetic span{display:inline-block;overflow:hidden;}
+  .kinetic span i{display:inline-block;font-style:normal;transform:translateY(110%);transition:transform .8s cubic-bezier(.2,.9,.2,1);}
+  .kinetic.play span i{transform:translateY(0);}
+  .kinetic .accent{color:var(--red);}
+  .hero-home-sub{
+    display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:24px;
+    margin-top:26px;padding-top:26px;border-top:1px solid rgba(255,255,255,.2);
+  }
+  .hero-home-sub p{font-size:17px;color:rgba(255,255,255,.82);max-width:420px;}
+  .hero-home-actions{display:flex;gap:12px;flex-wrap:wrap;}
+
+  .strip{background:var(--ink);color:#fff;padding:22px 0;overflow:hidden;white-space:nowrap;}
+  .strip-track{display:inline-flex;gap:48px;animation:marquee 26s linear infinite;}
+  .strip-track span{font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:.06em;color:rgba(255,255,255,.75);}
+  .strip-track span b{color:var(--red);}
+  .strip-track a{font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:.06em;color:rgba(255,255,255,.75);cursor:pointer;transition:color .2s ease;}
+  .strip-track a:hover{color:#fff;}
+  .strip-track a b{color:var(--red);}
+  @keyframes marquee{ from{transform:translateX(0);} to{transform:translateX(-50%);} }
+
+  .home-intro{display:grid;grid-template-columns:0.9fr 1.1fr;gap:70px;align-items:center;max-width:var(--max);margin:0 auto;}
+  .home-intro-photo{aspect-ratio:4/5;border-radius:var(--radius);overflow:hidden;border:1px solid var(--border);position:relative;}
+  .home-intro-photo img{width:100%;height:100%;object-fit:cover;}
+  .home-intro-text p{color:var(--ink-soft);font-size:17px;margin-bottom:18px;}
+  .home-intro-badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px;}
+  .badge{font-size:13px;font-weight:600;padding:8px 16px;border-radius:100px;background:var(--bg-soft);border:1px solid var(--border);color:var(--ink-soft);}
+
+  .home-categories{max-width:var(--max);margin:0 auto;}
+  .cat-grid-mini{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:20px;}
+
+  /* ============ TRAVAUX ============ */
+  .travaux-hero{
+    position:relative;height:46vh;min-height:340px;display:flex;align-items:flex-end;color:#fff;overflow:hidden;
+  }
+  .travaux-hero .hero-bg{position:absolute;inset:0;background:url('assets/photos/hero/hero-travaux.jpg') center 30%/cover no-repeat;}
+  .travaux-hero .hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg, rgba(8,5,6,.92), rgba(8,5,6,.15));}
+  .travaux-hero-content{position:relative;padding:0 28px 48px;max-width:var(--max);margin:0 auto;width:100%;}
+  .travaux-hero h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(44px,7vw,84px);line-height:.95;}
+  .travaux-hero p{color:rgba(255,255,255,.8);font-size:16px;margin-top:10px;max-width:480px;}
+
+  .cat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:var(--max);margin:60px auto 0;padding:0 28px;}
+  .cat-card{
+    position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:4/5;cursor:pointer;
+    border:1px solid var(--border);
+  }
+  .cat-card img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.2,.8,.2,1);}
+  .cat-card:hover img{transform:scale(1.08);}
+  .cat-card::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg, rgba(5,3,4,.88) 0%, rgba(5,3,4,.1) 55%);}
+  .cat-card-body{position:absolute;left:0;right:0;bottom:0;padding:26px;color:#fff;z-index:2;}
+  .cat-card-body .count{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.65);margin-bottom:6px;display:block;}
+  .cat-card-body h3{font-family:'Bebas Neue',sans-serif;font-size:34px;letter-spacing:.02em;display:flex;align-items:center;justify-content:space-between;gap:10px;}
+  .cat-card-body .arrow{font-size:22px;transition:transform .3s ease;}
+  .cat-card:hover .arrow{transform:translate(5px,-5px);color:var(--red-dark);filter:none;}
+  .cat-card:hover .cat-card-body .arrow{color:#fff;transform:translate(6px,-6px);}
+
+  /* ============ CATEGORY DETAIL PAGES ============ */
+  .cat-header{padding:150px 28px 40px;max-width:var(--max);margin:0 auto;}
+  .breadcrumb{font-size:13.5px;color:var(--ink-soft);margin-bottom:18px;display:flex;align-items:center;gap:8px;}
+  .breadcrumb a{color:var(--ink-soft);font-weight:600;}
+  .breadcrumb a:hover{color:var(--red);}
+  .cat-header h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(42px,6vw,72px);letter-spacing:.02em;}
+  .cat-header p{color:var(--ink-soft);font-size:16.5px;margin-top:10px;max-width:560px;}
+
+  .filter-row{display:flex;gap:10px;flex-wrap:wrap;max-width:var(--max);margin:0 auto 40px;padding:0 28px;}
+  .filter-btn{
+    font-size:13.5px;font-weight:600;padding:9px 18px;border-radius:100px;
+    background:#fff;border:1px solid var(--border);color:var(--ink-soft);cursor:pointer;transition:all .2s;
+  }
+  .filter-btn:hover{border-color:var(--ink);color:var(--ink);}
+  .filter-btn.active{background:var(--ink);color:#fff;border-color:var(--ink);}
+
+  .gallery-grid{max-width:var(--max);margin:0 auto;padding:0 28px 40px;column-count:3;column-gap:22px;}
+  .gallery-item{
+    break-inside:avoid;margin-bottom:22px;border-radius:16px;overflow:hidden;
+    position:relative;cursor:pointer;border:1px solid var(--border);background:#fff;
+    transition:transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s ease;
+  }
+  .gallery-item:hover{transform:translateY(-5px);box-shadow:0 22px 48px -18px rgba(20,10,12,.25);}
+  .gallery-item img{width:100%;display:block;transition:transform .5s ease;}
+  .gallery-item:hover img{transform:scale(1.05);}
+  .gallery-overlay{
+    position:absolute;inset:0;background:linear-gradient(0deg, rgba(0,0,0,.62) 0%, rgba(0,0,0,0) 45%);
+    display:flex;align-items:flex-end;padding:16px;opacity:0;transition:opacity .3s ease;
+  }
+  .gallery-item:hover .gallery-overlay{opacity:1;}
+  .gallery-overlay span{
+    color:#fff;font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;
+    background:rgba(255,255,255,.15);backdrop-filter:blur(6px);padding:6px 12px;border-radius:100px;
+  }
+
+  .back-cta{max-width:var(--max);margin:0 auto;padding:0 28px 90px;}
+
+  /* VIDEO */
+  .travaux-hero.is-video .hero-bg{background-image:url('assets/photos/video-posters/argentine.jpg');background-position:center 20%;}
+  .travaux-hero.is-clients .hero-bg{background-image:url('assets/photos/hero/hero-clients.jpg');background-position:center 42%;}
+  .play-badge{
+    position:absolute;top:18px;right:18px;z-index:2;
+    width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.16);
+    backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.35);
+    display:flex;align-items:center;justify-content:center;color:#fff;font-size:13px;
+    transition:transform .3s ease, background .3s ease;
+  }
+  .cat-card:hover .play-badge{transform:scale(1.12);background:var(--red);border-color:var(--red);}
+  .video-wrap{max-width:920px;margin:0 auto 20px;border-radius:var(--radius);overflow:hidden;border:1px solid var(--border);background:#0b0b0d;}
+  .video-wrap video{width:100%;display:block;max-height:80vh;background:#000;}
+  .video-wrap-portrait{max-width:420px;}
+  .video-wrap-portrait video{max-height:74vh;}
+  .video-grid{max-width:var(--max);margin:0 auto;padding:0 28px 20px;display:flex;gap:28px;justify-content:center;flex-wrap:wrap;align-items:flex-start;}
+  .video-grid .video-wrap{margin:0;}
+  .video-caption{text-align:center;font-size:14px;color:var(--ink-soft);margin-top:12px;font-weight:600;}
+  .video-desc{text-align:center;font-size:13.5px;color:var(--ink-soft);opacity:.75;margin-top:4px;max-width:340px;margin-left:auto;margin-right:auto;}
+
+  /* ============ ILS M'ONT FAIT CONFIANCE ============ */
+  .trust-group{max-width:var(--max);margin:0 auto;padding:0 28px 50px;}
+  .trust-group-title{
+    font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--ink-soft);margin-bottom:20px;padding-bottom:14px;border-bottom:1px solid var(--border);
+  }
+  .trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .trust-card{
+    background:#fff;border:1px solid var(--border);border-radius:var(--radius);
+    padding:28px 26px;transition:transform .3s cubic-bezier(.2,.8,.2,1), box-shadow .3s ease, border-color .3s ease;
+  }
+  .trust-card:hover{transform:translateY(-4px);box-shadow:0 20px 40px -20px rgba(20,10,12,.18);border-color:transparent;}
+  .trust-avatar{width:58px;height:58px;border-radius:50%;overflow:hidden;margin-bottom:16px;background:var(--red-soft);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+  .trust-avatar img{width:100%;height:100%;object-fit:cover;display:block;}
+  .trust-avatar-initials{font-family:'Bebas Neue',sans-serif;font-size:21px;letter-spacing:.02em;color:var(--red);}
+  .trust-tag{
+    display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--red);background:var(--red-soft);padding:5px 12px;border-radius:100px;margin-bottom:14px;
+  }
+  .trust-card h3{font-size:19px;font-weight:700;letter-spacing:-0.01em;margin-bottom:4px;}
+  .trust-card p{font-size:14px;color:var(--ink-soft);}
+  .trust-grid .trust-card:nth-child(1){transition-delay:.03s}
+  .trust-grid .trust-card:nth-child(2){transition-delay:.1s}
+  .trust-grid .trust-card:nth-child(3){transition-delay:.17s}
+
+  /* ============ ABOUT ============ */
+  .about-grid{display:grid;grid-template-columns:0.85fr 1.15fr;gap:70px;align-items:center;max-width:var(--max);margin:0 auto;}
+  .about-photo{aspect-ratio:4/5;border-radius:var(--radius);overflow:hidden;border:1px solid var(--border);}
+  .about-photo img{width:100%;height:100%;object-fit:cover;object-position:center 20%;}
+  .about-text h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(40px,5.5vw,60px);letter-spacing:.02em;margin-bottom:20px;}
+  .about-text p{color:var(--ink-soft);font-size:17px;margin-bottom:18px;}
+  .clients{margin-top:36px;}
+  .clients h4{font-size:12.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:14px;}
+  .client-chips{display:flex;gap:10px;flex-wrap:wrap;}
+  .client-chips span{font-size:13.5px;font-weight:600;padding:8px 16px;border-radius:100px;background:var(--bg-soft);border:1px solid var(--border);}
+
+  /* ============ CONTACT ============ */
+  .contact-box{
+    max-width:900px;margin:150px auto 100px;background:var(--ink);color:#fff;
+    border-radius:28px;padding:80px 50px;text-align:center;position:relative;overflow:hidden;
+  }
+  .contact-box::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 25% 15%, rgba(200,16,46,.45), transparent 55%);}
+  .contact-box h1{position:relative;font-family:'Bebas Neue',sans-serif;font-size:clamp(38px,5.5vw,64px);letter-spacing:.02em;margin-bottom:18px;}
+  .contact-box p{position:relative;color:rgba(255,255,255,.7);font-size:17px;max-width:480px;margin:0 auto 34px;}
+  .contact-actions{position:relative;display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+  .contact-box .btn-primary:hover{background:#fff;color:var(--ink);}
+  .contact-person{
+    position:relative;margin-top:40px;padding-top:28px;border-top:1px solid rgba(255,255,255,.15);
+    display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;
+  }
+  .contact-person-role{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.5);}
+  .contact-person-name{font-size:15px;font-weight:600;color:#fff;}
+  .contact-person-phone{font-size:15px;font-weight:600;color:var(--red);transition:color .2s;}
+  .contact-person-phone:hover{color:#fff;}
+  .contact-person span:not(:last-child)::after{content:"·";margin-left:10px;color:rgba(255,255,255,.3);}
+
+  /* FOOTER */
+  footer{padding:50px 28px 40px;border-top:1px solid var(--border);}
+  .footer-row{max-width:var(--max);margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;}
+  .footer-row p{font-size:14px;color:var(--ink-soft);}
+  .footer-links{display:flex;gap:26px;}
+  .footer-links a{font-size:14px;color:var(--ink-soft);transition:color .2s;}
+  .footer-links a:hover{color:var(--red);}
+
+  /* LIGHTBOX */
+  .lightbox{position:fixed;inset:0;background:rgba(8,5,6,.95);z-index:3000;display:none;align-items:center;justify-content:center;padding:40px;}
+  .lightbox.open{display:flex;}
+  .lightbox img{max-width:90vw;max-height:85vh;border-radius:10px;object-fit:contain;}
+  .lightbox-close{
+    position:absolute;top:28px;right:32px;color:#fff;font-size:26px;cursor:pointer;
+    width:44px;height:44px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:rgba(255,255,255,.1);
+  }
+  .lightbox-close:hover{background:rgba(255,255,255,.2);}
+
+  /* PAGE TRANSITION OVERLAY — 3 variantes */
+  #pageTransition{
+    position:fixed;inset:0;z-index:5000;pointer-events:none;
+    display:flex;align-items:center;justify-content:center;
+  }
+  #pageTransition .pt-mark{font-family:'Bebas Neue',sans-serif;font-size:26px;letter-spacing:.08em;color:#fff;opacity:0;transition:opacity .25s ease;}
+
+  /* variant: vertical wipe (Accueil / À propos / Contact) */
+  #pageTransition.v-wipe{background:linear-gradient(135deg,#0e0b0c,var(--red) 130%);transform:translateY(100%);}
+  #pageTransition.v-wipe.cover{transition:transform .5s cubic-bezier(.76,0,.24,1);transform:translateY(0%);}
+  #pageTransition.v-wipe.uncover{transition:transform .5s cubic-bezier(.76,0,.24,1);transform:translateY(-100%);}
+
+  /* variant: iris / diaphragme (clic sur une carte de sélection) */
+  #pageTransition.iris{background:radial-gradient(circle, var(--red), #0e0b0c 120%);clip-path:circle(0% at 50% 50%);}
+  #pageTransition.iris.cover{transition:clip-path .6s cubic-bezier(.76,0,.24,1);clip-path:circle(150% at 50% 50%);}
+  #pageTransition.iris.uncover{transition:clip-path .6s cubic-bezier(.76,0,.24,1);clip-path:circle(0% at 50% 50%);}
+
+  @media (max-width:900px){
+    .nav-links,.nav-cta .btn-ghost{display:none;}
+    .menu-toggle{display:flex;}
+    .home-intro,.about-grid{grid-template-columns:1fr;gap:40px;}
+    .cat-grid,.cat-grid-mini{grid-template-columns:1fr 1fr;}
+    .trust-grid{grid-template-columns:1fr 1fr;}
+    .gallery-grid{column-count:2;}
+    .contact-box{padding:60px 30px;margin:130px auto 70px;}
+  }
+  @media (max-width:600px){
+    .cat-grid,.cat-grid-mini{grid-template-columns:1fr;}
+    .trust-grid{grid-template-columns:1fr;}
+    .gallery-grid{column-count:1;}
+    section{padding:70px 20px;}
+    .hero-home-sub{flex-direction:column;align-items:flex-start;}
+    .cat-header{padding:130px 20px 30px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<header id="siteHeader">
+  <div class="wrap">
+    <div class="logo" data-link="home"><b>CST<span class="dot">.</span>STUDIO</b><span>Yohan Castella — Photographe & Filmmaker</span></div>
+    <ul class="nav-links">
+      <li><a href="#home" data-link="home">Accueil</a></li>
+      <li><a href="#photo" data-link="photo">Photographie</a></li>
+      <li><a href="#video" data-link="video">Vidéographie</a></li>
+      <li><a href="#confiance" data-link="confiance">Clients</a></li>
+      <li><a href="#apropos" data-link="apropos">À propos</a></li>
+      <li><a href="#contact" data-link="contact">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="#contact" data-link="contact" class="btn btn-ghost">Me contacter</a>
+    </div>
+    <button class="menu-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ================= HOME ================= -->
+<div class="page" data-route="home">
+  <div class="hero-home">
+    <div class="hero-bg"></div>
+    <div class="hero-home-content">
+      <div class="kicker"><i></i> Disponible pour missions sportives & événementielles</div>
+      <h1 class="kinetic" id="kineticTitle">
+        <span><i>YOHAN</i></span><br>
+        <span><i class="accent">CASTELLA</i></span>
+      </h1>
+      <div class="hero-home-sub">
+        <p>Photographe & vidéaste basé en France, 24 ans. Fondateur de CST STUDIO.</p>
+        <div class="hero-home-actions">
+          <a href="#photo" data-link="photo" class="btn btn-primary">Voir mes photos</a>
+          <a href="#video" data-link="video" class="btn btn-light">Voir mes vidéos</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="strip">
+    <div class="strip-track">
+      <a data-link="football-argentine">SÉLECTION ARGENTINE <b>·</b></a><a data-link="football-psg">PSG <b>·</b></a><a data-link="football-om">OM <b>·</b></a><a data-link="football-atalanta">ATALANTA <b>·</b></a><a data-link="football-la-galaxy">LA GALAXY <b>·</b></a><a data-link="basketball">AS MONACO BASKET <b>·</b></a><a data-link="tennis-atp-occitanie">ATP 250 OCCITANIE <b>·</b></a><a data-link="musique">JOK'AIR <b>·</b></a>
+      <a data-link="football-argentine">SÉLECTION ARGENTINE <b>·</b></a><a data-link="football-psg">PSG <b>·</b></a><a data-link="football-om">OM <b>·</b></a><a data-link="football-atalanta">ATALANTA <b>·</b></a><a data-link="football-la-galaxy">LA GALAXY <b>·</b></a><a data-link="basketball">AS MONACO BASKET <b>·</b></a><a data-link="tennis-atp-occitanie">ATP 250 OCCITANIE <b>·</b></a><a data-link="musique">JOK'AIR <b>·</b></a>
+    </div>
+  </div>
+
+  <section>
+    <div class="home-intro">
+      <div class="home-intro-photo reveal">
+        <img src="assets/photos/hero/portrait-yohan.jpg" alt="Yohan Castella">
+      </div>
+      <div class="home-intro-text reveal">
+        <span class="tag">CST Studio</span>
+        <h2 style="font-size:32px;font-weight:800;letter-spacing:-0.02em;margin-bottom:18px;">L'art de l'image, immobile ou en mouvement</h2>
+        <p>Je suis Yohan Castella, 24 ans, photographe, vidéaste et community manager, fondateur de CST STUDIO. Je capture et je filme le sport, la musique et le quotidien des marques avec la même exigence esthétique, sur le terrain comme derrière un écran.</p>
+        <p>De l'image fixe au montage vidéo jusqu'à la gestion des réseaux sociaux, j'accompagne clubs, commerces et artistes sur l'ensemble de leur image. Toujours curieux, je reste ouvert à toute proposition, quel que soit le format.</p>
+        <div class="home-intro-badges">
+          <span class="badge">Ouvert à toute proposition</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight" style="background:var(--bg-soft);">
+    <div class="home-categories">
+      <div class="section-head reveal">
+        <span class="tag">Photographie</span>
+        <h2>Un travail, plusieurs univers</h2>
+        <p>Du terrain aux commerces locaux, en passant par le quotidien — un même regard.</p>
+      </div>
+      <div class="cat-grid-mini">
+        <div class="cat-card reveal" data-link="football"><img src="assets/photos/football/argentine-01.jpg" alt="Sport"><div class="cat-card-body"><span class="count">Terrain</span><h3>Sport <span class="arrow">↗</span></h3></div></div>
+        <div class="cat-card reveal" data-link="entreprise"><img src="assets/photos/entreprise/entreprise-01.jpg" alt="Entreprise"><div class="cat-card-body"><span class="count">Corporate</span><h3>Entreprise <span class="arrow">↗</span></h3></div></div>
+        <div class="cat-card reveal" data-link="lifestyle"><img src="assets/photos/lifestyle/lifestyle-01.jpg" alt="Lifestyle"><div class="cat-card-body"><span class="count">Personnel</span><h3>Lifestyle <span class="arrow">↗</span></h3></div></div>
+      </div>
+      <div style="text-align:center;margin-top:28px;">
+        <a data-link="photo" class="btn btn-ghost">Voir toutes les photos</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="home-categories">
+      <div class="section-head reveal">
+        <span class="tag">Vidéographie</span>
+        <h2>Aussi derrière la caméra</h2>
+        <p>Reels, teasers et formats courts pour clubs, commerces et projets personnels.</p>
+      </div>
+      <div class="cat-grid-mini">
+        <div class="cat-card video-card reveal" data-link="video-argentine"><img src="assets/photos/video-posters/argentine.jpg" alt="Reel Argentine"><span class="play-badge">▶</span><div class="cat-card-body"><span class="count">Reel</span><h3>Argentine <span class="arrow">↗</span></h3></div></div>
+        <div class="cat-card video-card reveal" data-link="video-emporia-fc"><img src="assets/photos/video-posters/emporia-fc.jpg" alt="Emporia FC"><span class="play-badge">▶</span><div class="cat-card-body"><span class="count">Trailer</span><h3>Emporia FC <span class="arrow">↗</span></h3></div></div>
+        <div class="cat-card video-card reveal" data-link="video-instant"><img src="assets/photos/video-posters/instant-time.jpg" alt="Instant Mov"><span class="play-badge">▶</span><div class="cat-card-body"><span class="count">2 formats courts</span><h3>Instant Mov <span class="arrow">↗</span></h3></div></div>
+      </div>
+      <div style="text-align:center;margin-top:28px;">
+        <a data-link="video" class="btn btn-ghost">Voir toutes les vidéos</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ================= PHOTO (hub) ================= -->
+<div class="page" data-route="photo">
+  <div class="travaux-hero">
+    <div class="hero-bg"></div>
+    <div class="travaux-hero-content">
+      <h1 class="display">Photographie</h1>
+      <p>Sept univers, une seule exigence : capter l'émotion. Parcourez mes reportages sportifs, musicaux, corporate et lifestyle.</p>
+    </div>
+  </div>
+  <div class="cat-grid">
+    <div class="cat-card reveal" data-link="football"><img src="assets/photos/football/argentine-01.jpg" alt="Football"><div class="cat-card-body"><span class="count">92 photos</span><h3>Football <span class="arrow">↗</span></h3></div></div>
+    <div class="cat-card reveal" data-link="basketball"><img src="assets/photos/basketball/basket-01.jpg" alt="Basketball"><div class="cat-card-body"><span class="count">25 photos</span><h3>Basketball <span class="arrow">↗</span></h3></div></div>
+    <div class="cat-card reveal" data-link="tennis"><img src="assets/photos/tennis/tennis-05.jpg" alt="Tennis"><div class="cat-card-body"><span class="count">9 photos</span><h3>Tennis <span class="arrow">↗</span></h3></div></div>
+    <div class="cat-card reveal" data-link="entreprise"><img src="assets/photos/entreprise/entreprise-01.jpg" alt="Entreprise"><div class="cat-card-body"><span class="count">10 photos</span><h3>Entreprise <span class="arrow">↗</span></h3></div></div>
+    <div class="cat-card reveal" data-link="musique"><img src="assets/photos/musique/musique-04.jpg" alt="Musique"><div class="cat-card-body"><span class="count">5 photos</span><h3>Musique <span class="arrow">↗</span></h3></div></div>
+    <div class="cat-card reveal" data-link="paysages"><img src="assets/photos/paysages/paysages-01.jpg" alt="Paysages"><div class="cat-card-body"><span class="count">5 photos</span><h3>Paysages <span class="arrow">↗</span></h3></div></div>
+    <div class="cat-card reveal" data-link="lifestyle"><img src="assets/photos/lifestyle/lifestyle-01.jpg" alt="Lifestyle"><div class="cat-card-body"><span class="count">9 photos</span><h3>Lifestyle <span class="arrow">↗</span></h3></div></div>
+  </div>
+  <div style="height:90px;"></div>
+</div>
+
+<!-- ================= VIDEO (hub) ================= -->
+<div class="page" data-route="video">
+  <div class="travaux-hero is-video">
+    <div class="hero-bg"></div>
+    <div class="travaux-hero-content">
+      <h1 class="display">Vidéographie</h1>
+      <p>Reels et teasers pour clubs, commerces et projets personnels — une autre façon de raconter le mouvement.</p>
+    </div>
+  </div>
+  <div class="cat-grid">
+    <div class="cat-card video-card reveal" data-link="video-argentine"><img src="assets/photos/video-posters/argentine.jpg" alt="Argentine"><span class="play-badge">▶</span><div class="cat-card-body"><span class="count">Reel · 0:36</span><h3>Argentine <span class="arrow">↗</span></h3></div></div>
+    <div class="cat-card video-card reveal" data-link="video-chez-castel"><img src="assets/photos/video-posters/chez-castel.jpg" alt="Chez Castel"><span class="play-badge">▶</span><div class="cat-card-body"><span class="count">Reel · 0:39</span><h3>Chez Castel <span class="arrow">↗</span></h3></div></div>
+    <div class="cat-card video-card reveal" data-link="video-emporia-fc"><img src="assets/photos/video-posters/emporia-fc.jpg" alt="Emporia FC"><span class="play-badge">▶</span><div class="cat-card-body"><span class="count">Trailer · 0:19</span><h3>Emporia FC <span class="arrow">↗</span></h3></div></div>
+    <div class="cat-card video-card reveal" data-link="video-instant"><img src="assets/photos/video-posters/instant-time.jpg" alt="Instant Mov"><span class="play-badge">▶</span><div class="cat-card-body"><span class="count">2 formats courts</span><h3>Instant Mov <span class="arrow">↗</span></h3></div></div>
+  </div>
+  <div style="height:90px;"></div>
+</div>
+
+<!-- ================= FOOTBALL (sélecteur de club) ================= -->
+<div class="page" data-route="football">
+  <div class="cat-header">
+    <div class="breadcrumb"><a data-link="photo">Photographie</a> <span>/</span> <span>Football</span></div>
+    <h1>Football</h1>
+    <p>Sélection argentine, Ligue des Champions, MLS & Serie A. Choisissez un club pour voir le reportage complet.</p>
+  </div>
+  <div class="cat-grid">
+    <div class="cat-card reveal" data-link="football-argentine"><img src="assets/photos/football/argentine-01.jpg" alt="Sélection Argentine"><div class="cat-card-body"><span class="count">23 photos</span><h3>Sélection Argentine <span class="arrow">↗</span></h3></div></div>
+    <div class="cat-card reveal" data-link="football-atalanta"><img src="assets/photos/football/atalanta-01.jpg" alt="Atalanta"><div class="cat-card-body"><span class="count">15 photos</span><h3>Atalanta <span class="arrow">↗</span></h3></div></div>
+    <div class="cat-card reveal" data-link="football-om"><img src="assets/photos/football/om-02.jpg" alt="OM"><div class="cat-card-body"><span class="count">20 photos</span><h3>OM <span class="arrow">↗</span></h3></div></div>
+    <div class="cat-card reveal" data-link="football-la-galaxy"><img src="assets/photos/football/la-galaxy-01.jpg" alt="LA Galaxy"><div class="cat-card-body"><span class="count">18 photos</span><h3>LA Galaxy <span class="arrow">↗</span></h3></div></div>
+    <div class="cat-card reveal" data-link="football-psg"><img src="assets/photos/football/psg-01.jpg" alt="PSG"><div class="cat-card-body"><span class="count">16 photos</span><h3>PSG <span class="arrow">↗</span></h3></div></div>
+  </div>
+  <div class="back-cta"><a data-link="photo" class="btn btn-ghost">← Toutes les photos</a></div>
+</div>
+
+<!-- ================= FOOTBALL / ARGENTINE ================= -->
+<div class="page" data-route="football-argentine">
+  <div class="cat-header">
+    <div class="breadcrumb"><a data-link="photo">Photographie</a> <span>/</span> <a data-link="football">Football</a> <span>/</span> <span>Sélection Argentine</span></div>
+    <h1>Sélection Argentine</h1>
+    <p>Reportage complet autour de la sélection argentine.</p>
+  </div>
+  <div class="gallery-grid" data-gallery="football-argentine">
+    <div class="gallery-item reveal"><img src="assets/photos/football/argentine-01.jpg" alt="Argentine"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/argentine-02.jpg" alt="Argentine"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/argentine-03.jpg" alt="Argentine"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/argentine-04.jpg" alt="Argentine"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/argentine-05.jpg" alt="Argentine"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/argentine-06.jpg" alt="Argentine"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/argentine-07.jpg" alt="Argentine"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/argentine-08.jpg" alt="Argentine"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/argentine-09.jpg" alt="Argentine"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/argentine-10.jpg" alt="Argentine"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/argentine-11.jpg" alt="Argentine"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/argentine-12.jpg" alt="Argentine"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/argentine-13.jpg" alt="Argentine"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/argentine-14.jpg" alt="Argentine"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/argentine-15.jpg" alt="Argentine"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/argentine-16.jpg" alt="Argentine"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/argentine-17.jpg" alt="Argentine"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/argentine-18.jpg" alt="Argentine"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/argentine-19.jpg" alt="Argentine"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/argentine-20.jpg" alt="Argentine"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/argentine-21.jpg" alt="Argentine"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/argentine-22.jpg" alt="Argentine"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/argentine-23.jpg" alt="Argentine"></div>
+  </div>
+  <div class="back-cta"><a data-link="football" class="btn btn-ghost">← Retour à Football</a></div>
+</div>
+
+<!-- ================= FOOTBALL / ATALANTA ================= -->
+<div class="page" data-route="football-atalanta">
+  <div class="cat-header">
+    <div class="breadcrumb"><a data-link="photo">Photographie</a> <span>/</span> <a data-link="football">Football</a> <span>/</span> <span>Atalanta</span></div>
+    <h1>Atalanta</h1>
+    <p>Soirées de Ligue des Champions et Serie A à Bergame.</p>
+  </div>
+  <div class="gallery-grid" data-gallery="football-atalanta">
+    <div class="gallery-item reveal"><img src="assets/photos/football/atalanta-01.jpg" alt="Atalanta"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/atalanta-02.jpg" alt="Atalanta"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/atalanta-03.jpg" alt="Atalanta"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/atalanta-04.jpg" alt="Atalanta"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/atalanta-05.jpg" alt="Atalanta"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/atalanta-06.jpg" alt="Atalanta"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/atalanta-07.jpg" alt="Atalanta"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/atalanta-08.jpg" alt="Atalanta"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/atalanta-09.jpg" alt="Atalanta"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/atalanta-10.jpg" alt="Atalanta"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/atalanta-11.jpg" alt="Atalanta"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/atalanta-12.jpg" alt="Atalanta"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/atalanta-13.jpg" alt="Atalanta"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/atalanta-14.jpg" alt="Atalanta"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/atalanta-15.jpg" alt="Atalanta"></div>
+  </div>
+  <div class="back-cta"><a data-link="football" class="btn btn-ghost">← Retour à Football</a></div>
+</div>
+
+<!-- ================= FOOTBALL / OM ================= -->
+<div class="page" data-route="football-om">
+  <div class="cat-header">
+    <div class="breadcrumb"><a data-link="photo">Photographie</a> <span>/</span> <a data-link="football">Football</a> <span>/</span> <span>OM</span></div>
+    <h1>OM</h1>
+    <p>Ambiance, flammes et ferveur au Vélodrome.</p>
+  </div>
+  <div class="gallery-grid" data-gallery="football-om">
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-01.jpg" alt="OM"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-02.jpg" alt="OM"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-03.jpg" alt="OM"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-04.jpg" alt="OM"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-05.jpg" alt="OM"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-06.jpg" alt="OM"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-07.jpg" alt="OM"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-08.jpg" alt="OM"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-09.jpg" alt="OM"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-10.jpg" alt="OM"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-11.jpg" alt="OM"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-12.jpg" alt="OM"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-13.jpg" alt="OM"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-14.jpg" alt="OM"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-15.jpg" alt="OM"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-16.jpg" alt="OM"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-17.jpg" alt="OM"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-18.jpg" alt="OM"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-19.jpg" alt="OM"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-20.jpg" alt="OM"></div>
+  </div>
+  <div class="back-cta"><a data-link="football" class="btn btn-ghost">← Retour à Football</a></div>
+</div>
+
+<!-- ================= FOOTBALL / LA GALAXY ================= -->
+<div class="page" data-route="football-la-galaxy">
+  <div class="cat-header">
+    <div class="breadcrumb"><a data-link="photo">Photographie</a> <span>/</span> <a data-link="football">Football</a> <span>/</span> <span>LA Galaxy</span></div>
+    <h1>LA Galaxy</h1>
+    <p>MLS — reportage réalisé aux États-Unis.</p>
+  </div>
+  <div class="gallery-grid" data-gallery="football-la-galaxy">
+    <div class="gallery-item reveal"><img src="assets/photos/football/la-galaxy-01.jpg" alt="LA Galaxy"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/la-galaxy-02.jpg" alt="LA Galaxy"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/la-galaxy-03.jpg" alt="LA Galaxy"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/la-galaxy-04.jpg" alt="LA Galaxy"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/la-galaxy-05.jpg" alt="LA Galaxy"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/la-galaxy-06.jpg" alt="LA Galaxy"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/la-galaxy-07.jpg" alt="LA Galaxy"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/la-galaxy-08.jpg" alt="LA Galaxy"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/la-galaxy-09.jpg" alt="LA Galaxy"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/la-galaxy-10.jpg" alt="LA Galaxy"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/la-galaxy-11.jpg" alt="LA Galaxy"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/la-galaxy-12.jpg" alt="LA Galaxy"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/la-galaxy-13.jpg" alt="LA Galaxy"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/la-galaxy-14.jpg" alt="LA Galaxy"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/la-galaxy-15.jpg" alt="LA Galaxy"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/la-galaxy-16.jpg" alt="LA Galaxy"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/la-galaxy-17.jpg" alt="LA Galaxy"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/la-galaxy-18.jpg" alt="LA Galaxy"></div>
+  </div>
+  <div class="back-cta"><a data-link="football" class="btn btn-ghost">← Retour à Football</a></div>
+</div>
+
+<!-- ================= FOOTBALL / PSG ================= -->
+<div class="page" data-route="football-psg">
+  <div class="cat-header">
+    <div class="breadcrumb"><a data-link="photo">Photographie</a> <span>/</span> <a data-link="football">Football</a> <span>/</span> <span>PSG</span></div>
+    <h1>PSG</h1>
+    <p>PSG - Chelsea, Ligue des Champions.</p>
+  </div>
+  <div class="gallery-grid" data-gallery="football-psg">
+    <div class="gallery-item reveal"><img src="assets/photos/football/psg-01.jpg" alt="PSG"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/psg-02.jpg" alt="PSG"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/psg-03.jpg" alt="PSG"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/psg-04.jpg" alt="PSG"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/psg-05.jpg" alt="PSG"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/psg-06.jpg" alt="PSG"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/psg-07.jpg" alt="PSG"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/psg-08.jpg" alt="PSG"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/psg-09.jpg" alt="PSG"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/psg-10.jpg" alt="PSG"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/psg-11.jpg" alt="PSG"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/psg-12.jpg" alt="PSG"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/psg-13.jpg" alt="PSG"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/psg-14.jpg" alt="PSG"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/psg-15.jpg" alt="PSG"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/psg-16.jpg" alt="PSG"></div>
+  </div>
+  <div class="back-cta"><a data-link="football" class="btn btn-ghost">← Retour à Football</a></div>
+</div>
+
+<!-- ================= BASKETBALL ================= -->
+<div class="page" data-route="basketball">
+  <div class="cat-header">
+    <div class="breadcrumb"><a data-link="photo">Photographie</a> <span>/</span> <span>Basketball</span></div>
+    <h1>Basketball</h1>
+    <p>AS Monaco Basket, EuroLeague — intensité, détails et portraits de joueurs.</p>
+  </div>
+  <div class="gallery-grid" data-gallery="basketball">
+    <div class="gallery-item reveal"><img src="assets/photos/basketball/basket-01.jpg" alt="Basketball"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/basketball/basket-02.jpg" alt="Basketball"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/basketball/basket-03.jpg" alt="Basketball"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/basketball/basket-04.jpg" alt="Basketball"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/basketball/basket-05.jpg" alt="Basketball"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/basketball/basket-06.jpg" alt="Basketball"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/basketball/basket-07.jpg" alt="Basketball"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/basketball/basket-08.jpg" alt="Basketball"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/basketball/basket-09.jpg" alt="Basketball"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/basketball/basket-10.jpg" alt="Basketball"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/basketball/basket-11.jpg" alt="Basketball"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/basketball/basket-12.jpg" alt="Basketball"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/basketball/basket-13.jpg" alt="Basketball"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/basketball/basket-14.jpg" alt="Basketball"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/basketball/basket-15.jpg" alt="Basketball"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/basketball/basket-16.jpg" alt="Basketball"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/basketball/basket-17.jpg" alt="Basketball"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/basketball/basket-18.jpg" alt="Basketball"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/basketball/basket-19.jpg" alt="Basketball"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/basketball/basket-20.jpg" alt="Basketball"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/basketball/basket-21.jpg" alt="Basketball"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/basketball/basket-22.jpg" alt="Basketball"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/basketball/basket-23.jpg" alt="Basketball"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/basketball/basket-24.jpg" alt="Basketball"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/basketball/basket-25.jpg" alt="Basketball"></div>
+  </div>
+  <div class="back-cta"><a data-link="photo" class="btn btn-ghost">← Toutes les photos</a></div>
+</div>
+
+<!-- ================= TENNIS (sélecteur) ================= -->
+<div class="page" data-route="tennis">
+  <div class="cat-header">
+    <div class="breadcrumb"><a data-link="photo">Photographie</a> <span>/</span> <span>Tennis</span></div>
+    <h1>Tennis</h1>
+    <p>UTS Nîmes & ATP 250 Occitanie — choisissez un tournoi pour voir le reportage complet.</p>
+  </div>
+  <div class="cat-grid">
+    <div class="cat-card reveal" data-link="tennis-uts-nimes"><img src="assets/photos/tennis/tennis-01.jpg" alt="UTS Nîmes"><div class="cat-card-body"><span class="count">4 photos</span><h3>UTS Nîmes <span class="arrow">↗</span></h3></div></div>
+    <div class="cat-card reveal" data-link="tennis-atp-occitanie"><img src="assets/photos/tennis/tennis-05.jpg" alt="ATP 250 Occitanie"><div class="cat-card-body"><span class="count">5 photos</span><h3>ATP 250 Occitanie <span class="arrow">↗</span></h3></div></div>
+  </div>
+  <div class="back-cta"><a data-link="photo" class="btn btn-ghost">← Toutes les photos</a></div>
+</div>
+
+<!-- ================= TENNIS / UTS NIMES ================= -->
+<div class="page" data-route="tennis-uts-nimes">
+  <div class="cat-header">
+    <div class="breadcrumb"><a data-link="photo">Photographie</a> <span>/</span> <a data-link="tennis">Tennis</a> <span>/</span> <span>UTS Nîmes</span></div>
+    <h1>UTS Nîmes</h1>
+    <p>Le format exhibition UTS, entre spectacle et intensité.</p>
+  </div>
+  <div class="gallery-grid" data-gallery="tennis-uts-nimes">
+    <div class="gallery-item reveal"><img src="assets/photos/tennis/tennis-01.jpg" alt="UTS Nîmes"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/tennis/tennis-02.jpg" alt="UTS Nîmes"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/tennis/tennis-03.jpg" alt="UTS Nîmes"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/tennis/tennis-04.jpg" alt="UTS Nîmes"></div>
+  </div>
+  <div class="back-cta"><a data-link="tennis" class="btn btn-ghost">← Retour à Tennis</a></div>
+</div>
+
+<!-- ================= TENNIS / ATP OCCITANIE ================= -->
+<div class="page" data-route="tennis-atp-occitanie">
+  <div class="cat-header">
+    <div class="breadcrumb"><a data-link="photo">Photographie</a> <span>/</span> <a data-link="tennis">Tennis</a> <span>/</span> <span>ATP 250 Occitanie</span></div>
+    <h1>ATP 250 Occitanie</h1>
+    <p>Le circuit professionnel à Montpellier.</p>
+  </div>
+  <div class="gallery-grid" data-gallery="tennis-atp-occitanie">
+    <div class="gallery-item reveal"><img src="assets/photos/tennis/tennis-05.jpg" alt="ATP Occitanie"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/tennis/tennis-06.jpg" alt="ATP Occitanie"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/tennis/tennis-07.jpg" alt="ATP Occitanie"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/tennis/tennis-08.jpg" alt="ATP Occitanie"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/tennis/tennis-09.jpg" alt="ATP Occitanie"></div>
+  </div>
+  <div class="back-cta"><a data-link="tennis" class="btn btn-ghost">← Retour à Tennis</a></div>
+</div>
+
+<!-- ================= ENTREPRISE (sélecteur) ================= -->
+<div class="page" data-route="entreprise">
+  <div class="cat-header">
+    <div class="breadcrumb"><a data-link="photo">Photographie</a> <span>/</span> <span>Entreprise</span></div>
+    <h1>Entreprise</h1>
+    <p>Chez Castel & Esprit PC — choisissez un commerce pour voir le reportage complet.</p>
+  </div>
+  <div class="cat-grid">
+    <div class="cat-card reveal" data-link="entreprise-chez-castel"><img src="assets/photos/entreprise/entreprise-01.jpg" alt="Chez Castel"><div class="cat-card-body"><span class="count">5 photos</span><h3>Chez Castel <span class="arrow">↗</span></h3></div></div>
+    <div class="cat-card reveal" data-link="entreprise-esprit-pc"><img src="assets/photos/entreprise/entreprise-06.jpg" alt="Esprit PC"><div class="cat-card-body"><span class="count">5 photos</span><h3>Esprit PC <span class="arrow">↗</span></h3></div></div>
+  </div>
+  <div class="back-cta"><a data-link="photo" class="btn btn-ghost">← Toutes les photos</a></div>
+</div>
+
+<!-- ================= ENTREPRISE / CHEZ CASTEL ================= -->
+<div class="page" data-route="entreprise-chez-castel">
+  <div class="cat-header">
+    <div class="breadcrumb"><a data-link="photo">Photographie</a> <span>/</span> <a data-link="entreprise">Entreprise</a> <span>/</span> <span>Chez Castel</span></div>
+    <h1>Chez Castel</h1>
+    <p>Reportage pour une pizzeria locale — le geste, le feu, le produit.</p>
+  </div>
+  <div class="gallery-grid" data-gallery="entreprise-chez-castel">
+    <div class="gallery-item reveal"><img src="assets/photos/entreprise/entreprise-01.jpg" alt="Chez Castel"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/entreprise/entreprise-02.jpg" alt="Chez Castel"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/entreprise/entreprise-03.jpg" alt="Chez Castel"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/entreprise/entreprise-04.jpg" alt="Chez Castel"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/entreprise/entreprise-05.jpg" alt="Chez Castel"></div>
+  </div>
+  <div class="back-cta"><a data-link="entreprise" class="btn btn-ghost">← Retour à Entreprise</a></div>
+</div>
+
+<!-- ================= ENTREPRISE / ESPRIT PC ================= -->
+<div class="page" data-route="entreprise-esprit-pc">
+  <div class="cat-header">
+    <div class="breadcrumb"><a data-link="photo">Photographie</a> <span>/</span> <a data-link="entreprise">Entreprise</a> <span>/</span> <span>Esprit PC</span></div>
+    <h1>Esprit PC</h1>
+    <p>Reportage pour un commerce spécialisé en informatique et PC sur-mesure.</p>
+  </div>
+  <div class="gallery-grid" data-gallery="entreprise-esprit-pc">
+    <div class="gallery-item reveal"><img src="assets/photos/entreprise/entreprise-06.jpg" alt="Esprit PC"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/entreprise/entreprise-07.jpg" alt="Esprit PC"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/entreprise/entreprise-08.jpg" alt="Esprit PC"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/entreprise/entreprise-09.jpg" alt="Esprit PC"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/entreprise/entreprise-10.jpg" alt="Esprit PC"></div>
+  </div>
+  <div class="back-cta"><a data-link="entreprise" class="btn btn-ghost">← Retour à Entreprise</a></div>
+</div>
+
+<!-- ================= MUSIQUE ================= -->
+<div class="page" data-route="musique">
+  <div class="cat-header">
+    <div class="breadcrumb"><a data-link="photo">Photographie</a> <span>/</span> <span>Musique</span></div>
+    <h1>Musique</h1>
+    <p>Jok'Air en concert — énergie de la scène et lumières.</p>
+  </div>
+  <div class="gallery-grid" data-gallery="musique">
+    <div class="gallery-item reveal"><img src="assets/photos/musique/musique-01.jpg" alt="Jok'Air"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/musique/musique-02.jpg" alt="Jok'Air"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/musique/musique-03.jpg" alt="Jok'Air"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/musique/musique-04.jpg" alt="Jok'Air"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/musique/musique-05.jpg" alt="Jok'Air"></div>
+  </div>
+  <div class="back-cta"><a data-link="photo" class="btn btn-ghost">← Toutes les photos</a></div>
+</div>
+
+<!-- ================= PAYSAGES ================= -->
+<div class="page" data-route="paysages">
+  <div class="cat-header">
+    <div class="breadcrumb"><a data-link="photo">Photographie</a> <span>/</span> <span>Paysages</span></div>
+    <h1>Paysages</h1>
+    <p>Lisbonne — un regard plus personnel, entre voyage et lumière.</p>
+  </div>
+  <div class="gallery-grid" data-gallery="paysages">
+    <div class="gallery-item reveal"><img src="assets/photos/paysages/paysages-01.jpg" alt="Lisbonne"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/paysages/paysages-02.jpg" alt="Lisbonne"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/paysages/paysages-03.jpg" alt="Lisbonne"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/paysages/paysages-04.jpg" alt="Lisbonne"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/paysages/paysages-05.jpg" alt="Lisbonne"></div>
+  </div>
+  <div class="back-cta"><a data-link="photo" class="btn btn-ghost">← Toutes les photos</a></div>
+</div>
+
+<!-- ================= LIFESTYLE ================= -->
+<div class="page" data-route="lifestyle">
+  <div class="cat-header">
+    <div class="breadcrumb"><a data-link="photo">Photographie</a> <span>/</span> <span>Lifestyle</span></div>
+    <h1>Lifestyle</h1>
+    <p>Une série plus personnelle autour de Lucas — quotidien, lumière naturelle et instants volés.</p>
+  </div>
+  <div class="gallery-grid" data-gallery="lifestyle">
+    <div class="gallery-item reveal"><img src="assets/photos/lifestyle/lifestyle-01.jpg" alt="Lifestyle"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/lifestyle/lifestyle-02.jpg" alt="Lifestyle"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/lifestyle/lifestyle-03.jpg" alt="Lifestyle"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/lifestyle/lifestyle-04.jpg" alt="Lifestyle"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/lifestyle/lifestyle-05.jpg" alt="Lifestyle"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/lifestyle/lifestyle-06.jpg" alt="Lifestyle"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/lifestyle/lifestyle-07.jpg" alt="Lifestyle"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/lifestyle/lifestyle-08.jpg" alt="Lifestyle"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/lifestyle/lifestyle-09.jpg" alt="Lifestyle"></div>
+  </div>
+  <div class="back-cta"><a data-link="photo" class="btn btn-ghost">← Toutes les photos</a></div>
+</div>
+
+<!-- ================= VIDEO / ARGENTINE ================= -->
+<div class="page" data-route="video-argentine">
+  <div class="cat-header">
+    <div class="breadcrumb"><a data-link="video">Vidéographie</a> <span>/</span> <span>Argentine</span></div>
+    <h1>Argentine</h1>
+    <p>Reel de couverture réalisé pendant Argentine – Honduras : la montée au tunnel, la ferveur des tribunes et l'intensité d'un match amical disputé aux États-Unis, en pleine préparation vers 2026.</p>
+  </div>
+  <div class="video-wrap">
+    <video controls preload="metadata" poster="assets/photos/video-posters/argentine.jpg" playsinline>
+      <source src="assets/videos/argentine.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="back-cta"><a data-link="video" class="btn btn-ghost">← Toutes les vidéos</a></div>
+</div>
+
+<!-- ================= VIDEO / CHEZ CASTEL ================= -->
+<div class="page" data-route="video-chez-castel">
+  <div class="cat-header">
+    <div class="breadcrumb"><a data-link="video">Vidéographie</a> <span>/</span> <span>Chez Castel</span></div>
+    <h1>Chez Castel</h1>
+    <p>Immersion dans les coulisses du foodtruck : la pâte étalée, le four à bois, le geste précis du cuisinier — jusqu'à la pizza qui sort, brûlante, prête à être servie.</p>
+  </div>
+  <div class="video-wrap video-wrap-portrait">
+    <video controls preload="metadata" poster="assets/photos/video-posters/chez-castel.jpg" playsinline>
+      <source src="assets/videos/chez-castel.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="back-cta"><a data-link="video" class="btn btn-ghost">← Toutes les vidéos</a></div>
+</div>
+
+<!-- ================= VIDEO / EMPORIA FC ================= -->
+<div class="page" data-route="video-emporia-fc">
+  <div class="cat-header">
+    <div class="breadcrumb"><a data-link="video">Vidéographie</a> <span>/</span> <span>Emporia FC</span></div>
+    <h1>Emporia FC</h1>
+    <p>Trailer réalisé pour le média day du club : portraits en studio, gros plans sur le maillot et l'écusson, pour poser l'identité visuelle d'Emporia FC avant la saison.</p>
+  </div>
+  <div class="video-wrap video-wrap-portrait">
+    <video controls preload="metadata" poster="assets/photos/video-posters/emporia-fc.jpg" playsinline>
+      <source src="assets/videos/emporia-fc.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="back-cta"><a data-link="video" class="btn btn-ghost">← Toutes les vidéos</a></div>
+</div>
+
+<!-- ================= VIDEO / INSTANT MOV ================= -->
+<div class="page" data-route="video-instant">
+  <div class="cat-header">
+    <div class="breadcrumb"><a data-link="video">Vidéographie</a> <span>/</span> <span>Instant Mov</span></div>
+    <h1>Instant Mov</h1>
+    <p>Deux formats courts et personnels, tournés sans script — entre humour, quotidien et rythme de montage assumé.</p>
+  </div>
+  <div class="video-grid">
+    <div class="video-wrap video-wrap-portrait">
+      <video controls preload="metadata" poster="assets/photos/video-posters/instant-time.jpg" playsinline>
+        <source src="assets/videos/instant-time.mp4" type="video/mp4">
+      </video>
+      <p class="video-caption">I have time, I need time</p>
+    </div>
+    <div class="video-wrap">
+      <video controls preload="metadata" poster="assets/photos/video-posters/instant-harder.jpg" playsinline>
+        <source src="assets/videos/instant-harder.mp4" type="video/mp4">
+      </video>
+      <p class="video-caption">Going harder</p>
+    </div>
+  </div>
+  <div class="back-cta"><a data-link="video" class="btn btn-ghost">← Toutes les vidéos</a></div>
+</div>
+
+<!-- ================= ILS M'ONT FAIT CONFIANCE ================= -->
+<div class="page" data-route="confiance">
+  <div class="travaux-hero is-clients">
+    <div class="hero-bg"></div>
+    <div class="travaux-hero-content">
+      <h1 class="display">Clients</h1>
+      <p>Sportifs, artiste et commerces qui m'ont confié leur image. Merci à eux.</p>
+    </div>
+  </div>
+  <div class="page-inner">
+    <section class="section-tight" style="padding-top:60px;">
+      <div class="trust-group">
+        <h4 class="trust-group-title reveal">Sportifs</h4>
+        <div class="trust-grid">
+          <div class="trust-card reveal"><div class="trust-avatar"><img src="assets/photos/clients/sanchez.jpg" alt="Robert Sanchez" style="object-position:center 25%;"></div><span class="trust-tag">Football</span><h3>Robert Sanchez</h3><p>Gardien de but — Chelsea FC</p></div>
+          <div class="trust-card reveal"><div class="trust-avatar"><img src="assets/photos/clients/de-minaur.jpg" alt="Alex De Minaur" style="object-position:center 20%;"></div><span class="trust-tag">Tennis</span><h3>Alex De Minaur</h3><p>Top 10 mondial ATP</p></div>
+          <div class="trust-card reveal"><div class="trust-avatar"><img src="assets/photos/clients/niakhate.jpg" alt="Moussa Niakhaté" style="object-position:center 25%;"></div><span class="trust-tag">Football</span><h3>Moussa Niakhaté</h3><p>Défenseur — Olympique Lyonnais</p></div>
+        </div>
+      </div>
+
+      <div class="trust-group">
+        <h4 class="trust-group-title reveal">Tournois</h4>
+        <div class="trust-grid">
+          <div class="trust-card reveal"><div class="trust-avatar"><img src="assets/photos/clients/donosti-cup.jpg" alt="Donosti Cup"></div><span class="trust-tag">Football</span><h3>Donosti Cup</h3><p>Tournoi international de football</p></div>
+          <div class="trust-card reveal"><div class="trust-avatar"><img src="assets/photos/clients/costa-daurada.jpg" alt="Costa Daurada Cup"></div><span class="trust-tag">Football</span><h3>Costa Daurada Cup</h3><p>Tournoi international de football</p></div>
+        </div>
+      </div>
+
+      <div class="trust-group">
+        <h4 class="trust-group-title reveal">Musique</h4>
+        <div class="trust-grid">
+          <div class="trust-card reveal"><div class="trust-avatar"><img src="assets/photos/clients/jokair.jpg" alt="Jok'Air" style="object-position:center 20%;"></div><span class="trust-tag">Artiste</span><h3>Jok'Air</h3><p>Rappeur & auteur-compositeur</p></div>
+        </div>
+      </div>
+
+      <div class="trust-group">
+        <h4 class="trust-group-title reveal">Entreprises</h4>
+        <div class="trust-grid">
+          <div class="trust-card reveal"><div class="trust-avatar"><img src="assets/photos/clients/esprit-pc.jpg" alt="Esprit PC"></div><span class="trust-tag">Commerce</span><h3>Esprit PC</h3><p>Informatique & PC sur-mesure</p></div>
+          <div class="trust-card reveal"><div class="trust-avatar"><img src="assets/photos/clients/chez-castel.jpg" alt="Chez Castel"></div><span class="trust-tag">Commerce</span><h3>Chez Castel</h3><p>Foodtruck</p></div>
+          <div class="trust-card reveal"><div class="trust-avatar"><img src="assets/photos/clients/emporia.jpg" alt="Emporia FC"></div><span class="trust-tag">Club</span><h3>Emporia FC</h3><p>Club de football — États-Unis</p></div>
+          <div class="trust-card reveal"><div class="trust-avatar"><img src="assets/photos/clients/sport-vision.jpg" alt="Sport Vision Lab"></div><span class="trust-tag">Presse</span><h3>Sport Vision Lab</h3><p>Agence de presse sportive</p></div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<!-- ================= A PROPOS ================= -->
+<div class="page" data-route="apropos">
+  <div class="page-inner">
+    <section style="padding-top:150px;">
+      <div class="about-grid">
+        <div class="about-photo reveal"><img src="assets/photos/hero/portrait-yohan.jpg" alt="Yohan Castella"></div>
+        <div class="about-text reveal">
+          <span class="tag">À propos</span>
+          <h1>Salut, je suis Yohan</h1>
+          <p>J'ai 24 ans et je suis photographe, vidéaste et community manager, fondateur de CST STUDIO. Ma passion : être au bon endroit au bon moment pour capter l'instant qui raconte vraiment ce qui se joue sur le terrain, sur scène ou en coulisses — à l'image comme en vidéo.</p>
+          <p>J'ai eu la chance de couvrir la sélection argentine, des rencontres de Ligue des Champions (PSG, Atalanta), de Ligue 1 (OM), de MLS (LA Galaxy), ainsi que du basketball professionnel, du tennis (UTS Nîmes, ATP 250 Occitanie) et des concerts.</p>
+          <p>Je travaille aussi avec des commerces locaux et des clubs pour des reportages, des vidéos et la gestion de leurs réseaux sociaux, avec la même exigence esthétique que sur le terrain. Toujours curieux, je reste ouvert à toute proposition, quel que soit le format.</p>
+          <a data-link="confiance" class="btn btn-ghost" style="margin-top:10px;">Voir ceux qui m'ont fait confiance →</a>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<!-- ================= CONTACT ================= -->
+<div class="page" data-route="contact">
+  <div class="contact-box reveal">
+    <h1>Travaillons ensemble</h1>
+    <p>Disponible pour des reportages sportifs, événementiels et missions éditoriales partout en France. Réponse sous 24h.</p>
+    <div class="contact-actions">
+      <a href="mailto:cststudio.0@gmail.com" class="btn btn-primary">cststudio.0@gmail.com</a>
+    </div>
+    <div class="contact-person">
+      <span class="contact-person-role">Chargé du relationnel</span>
+      <span class="contact-person-name">Tom Duvillers</span>
+      <a href="mailto:tomcststudio@gmail.com" class="contact-person-phone">tomcststudio@gmail.com</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-row">
+    <p>© 2026 CST STUDIO — Yohan Castella. Tous droits réservés.</p>
+    <div class="footer-links">
+      <a href="https://www.instagram.com/cst.studioo/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.linkedin.com/in/yohan-castella-2269b1241/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.facebook.com/yohan.cst" target="_blank" rel="noopener">Facebook</a>
+      <a href="mailto:cststudio.0@gmail.com">Email</a>
+    </div>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-close" id="lightboxClose">✕</div>
+  <img id="lightboxImg" src="" alt="Photo agrandie">
+</div>
+
+<div id="pageTransition"><span class="pt-mark">CST STUDIO</span></div>
+
+<script>
+  /* ---------- custom cursor ---------- */
+  if (window.matchMedia('(pointer:fine)').matches) {
+    document.body.classList.add('has-cursor');
+    const dot = document.getElementById('cursorDot');
+    const ring = document.getElementById('cursorRing');
+    let mx=0,my=0,rx=0,ry=0;
+    window.addEventListener('mousemove', e => { mx=e.clientX; my=e.clientY; dot.style.left=mx+'px'; dot.style.top=my+'px'; });
+    function loop(){ rx += (mx-rx)*0.18; ry += (my-ry)*0.18; ring.style.left=rx+'px'; ring.style.top=ry+'px'; requestAnimationFrame(loop); }
+    loop();
+    document.addEventListener('mouseover', e => {
+      if (e.target.closest('a, button, .gallery-item, .cat-card')) ring.classList.add('grow');
+    });
+    document.addEventListener('mouseout', e => {
+      if (e.target.closest('a, button, .gallery-item, .cat-card')) ring.classList.remove('grow');
+    });
+  }
+
+  /* ---------- router ---------- */
+  const header = document.getElementById('siteHeader');
+  const pages = document.querySelectorAll('.page');
+  const navLinkEls = document.querySelectorAll('[data-link]');
+  const overlay = document.getElementById('pageTransition');
+  const ptMark = overlay.querySelector('.pt-mark');
+  let animating = false;
+
+  /* révèle chaque bloc au moment où il entre dans l'écran, pas tout d'un coup */
+  let revealObserver = null;
+  function armReveal(container){
+    if (revealObserver) revealObserver.disconnect();
+    const items = container.querySelectorAll('.reveal');
+    items.forEach(el => el.classList.remove('in'));
+    revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+    items.forEach(el => revealObserver.observe(el));
+  }
+
+  const photoCategories = [
+    'photo','football','football-argentine','football-atalanta','football-om','football-la-galaxy','football-psg',
+    'basketball','tennis','tennis-uts-nimes','tennis-atp-occitanie',
+    'entreprise','entreprise-chez-castel','entreprise-esprit-pc','musique','paysages','lifestyle'
+  ];
+  const videoCategories = [
+    'video','video-argentine','video-chez-castel','video-emporia-fc','video-instant'
+  ];
+
+  function applyRoute(route){
+    pages.forEach(p => p.classList.toggle('active', p.dataset.route === route));
+    const activePage = document.querySelector('.page[data-route="'+route+'"]') || document.querySelector('.page[data-route="home"]');
+    header.classList.toggle('on-dark', route === 'home' || route === 'photo' || route === 'video' || route === 'confiance');
+    document.querySelectorAll('.nav-links a').forEach(a => {
+      const isPhotoGroup = a.dataset.link === 'photo' && photoCategories.includes(route);
+      const isVideoGroup = a.dataset.link === 'video' && videoCategories.includes(route);
+      a.classList.toggle('active', a.dataset.link === route || isPhotoGroup || isVideoGroup);
+    });
+    window.scrollTo(0,0);
+    armReveal(activePage);
+    if (route === 'home') {
+      const kt = document.getElementById('kineticTitle');
+      kt.classList.remove('play');
+      void kt.offsetWidth;
+      setTimeout(() => kt.classList.add('play'), 250);
+    }
+  }
+
+  function goTo(route, variant){
+    if (animating) return;
+    if (location.hash.replace('#','') === route) return;
+    animating = true;
+    variant = variant || 'v-wipe';
+    overlay.className = variant;
+    void overlay.offsetWidth;
+    overlay.classList.add('cover');
+    setTimeout(() => { ptMark.style.opacity = '1'; }, 220);
+    setTimeout(() => {
+      applyRoute(route);
+      history.pushState(null, '', '#' + route);
+      ptMark.style.opacity = '0';
+      overlay.classList.remove('cover');
+      overlay.classList.add('uncover');
+      setTimeout(() => {
+        overlay.className = variant;
+        animating = false;
+      }, 600);
+    }, 500);
+  }
+
+  navLinkEls.forEach(el => {
+    el.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (window.innerWidth <= 900) navLinksList.style.cssText = '';
+      const isSelection = el.classList.contains('cat-card');
+      goTo(el.dataset.link, isSelection ? 'iris' : 'v-wipe');
+    });
+  });
+
+  window.addEventListener('popstate', () => {
+    applyRoute(location.hash.replace('#','') || 'home');
+  });
+
+  /* initial route */
+  applyRoute(location.hash.replace('#','') || 'home');
+  if ((location.hash.replace('#','') || 'home') === 'home') {
+    setTimeout(() => document.getElementById('kineticTitle').classList.add('play'), 300);
+  }
+
+  /* ---------- mobile menu ---------- */
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinksList = document.querySelector('.nav-links');
+  menuToggle.addEventListener('click', () => {
+    const open = navLinksList.style.display === 'flex';
+    navLinksList.style.cssText = open ? '' : 'display:flex;position:absolute;top:78px;left:0;right:0;background:#fff;flex-direction:column;padding:20px 28px;border-bottom:1px solid var(--border);gap:6px;';
+  });
+
+  /* ---------- lightbox ---------- */
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightboxImg');
+  document.querySelectorAll('.gallery-item img').forEach(img => {
+    img.addEventListener('click', () => { lightboxImg.src = img.src; lightbox.classList.add('open'); });
+  });
+  document.getElementById('lightboxClose').addEventListener('click', () => lightbox.classList.remove('open'));
+  lightbox.addEventListener('click', (e) => { if (e.target === lightbox) lightbox.classList.remove('open'); });
+</script>
+
+</body>
+</html>
