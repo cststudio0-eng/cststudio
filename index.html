@@ -203,7 +203,10 @@
   }
   .hero-home .hero-bg{
     position:absolute;inset:0;
-    background:url('assets/photos/hero/hero-home.jpg') center 15%/cover no-repeat;
+    background:url('assets/photos/hero/hero-home-poster.jpg') center 40%/cover no-repeat;
+  }
+  .hero-home .hero-bg video{
+    position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%;
   }
   .hero-home .hero-bg::after{
     content:"";position:absolute;inset:0;
@@ -465,7 +468,11 @@
 <!-- ================= HOME ================= -->
 <div class="page" data-route="home">
   <div class="hero-home">
-    <div class="hero-bg"></div>
+    <div class="hero-bg">
+      <video autoplay muted loop playsinline preload="auto" poster="assets/photos/hero/hero-home-poster.jpg">
+        <source src="assets/videos/hero-home.mp4" type="video/mp4">
+      </video>
+    </div>
     <div class="hero-home-content">
       <div class="kicker"><i></i> Disponible pour missions sportives & événementielles</div>
       <h1 class="kinetic" id="kineticTitle">
@@ -553,7 +560,7 @@
     </div>
   </div>
   <div class="cat-grid">
-    <div class="cat-card reveal" data-link="football"><img src="assets/photos/football/argentine-01.jpg" alt="Football"><div class="cat-card-body"><span class="count">92 photos</span><h3>Football <span class="arrow">↗</span></h3></div></div>
+    <div class="cat-card reveal" data-link="football"><img src="assets/photos/football/argentine-01.jpg" alt="Football"><div class="cat-card-body"><span class="count">179 photos</span><h3>Football <span class="arrow">↗</span></h3></div></div>
     <div class="cat-card reveal" data-link="basketball"><img src="assets/photos/basketball/basket-01.jpg" alt="Basketball"><div class="cat-card-body"><span class="count">25 photos</span><h3>Basketball <span class="arrow">↗</span></h3></div></div>
     <div class="cat-card reveal" data-link="tennis"><img src="assets/photos/tennis/tennis-05.jpg" alt="Tennis"><div class="cat-card-body"><span class="count">9 photos</span><h3>Tennis <span class="arrow">↗</span></h3></div></div>
     <div class="cat-card reveal" data-link="entreprise"><img src="assets/photos/entreprise/entreprise-01.jpg" alt="Entreprise"><div class="cat-card-body"><span class="count">10 photos</span><h3>Entreprise <span class="arrow">↗</span></h3></div></div>
@@ -592,7 +599,7 @@
   <div class="cat-grid">
     <div class="cat-card reveal" data-link="football-argentine"><img src="assets/photos/football/argentine-01.jpg" alt="Sélection Argentine"><div class="cat-card-body"><span class="count">23 photos</span><h3>Sélection Argentine <span class="arrow">↗</span></h3></div></div>
     <div class="cat-card reveal" data-link="football-atalanta"><img src="assets/photos/football/atalanta-01.jpg" alt="Atalanta"><div class="cat-card-body"><span class="count">15 photos</span><h3>Atalanta <span class="arrow">↗</span></h3></div></div>
-    <div class="cat-card reveal" data-link="football-om"><img src="assets/photos/football/om-02.jpg" alt="OM"><div class="cat-card-body"><span class="count">20 photos</span><h3>OM <span class="arrow">↗</span></h3></div></div>
+    <div class="cat-card reveal" data-link="football-om"><img src="assets/photos/football/om-02.jpg" alt="OM"><div class="cat-card-body"><span class="count">107 photos</span><h3>OM <span class="arrow">↗</span></h3></div></div>
     <div class="cat-card reveal" data-link="football-la-galaxy"><img src="assets/photos/football/la-galaxy-01.jpg" alt="LA Galaxy"><div class="cat-card-body"><span class="count">18 photos</span><h3>LA Galaxy <span class="arrow">↗</span></h3></div></div>
     <div class="cat-card reveal" data-link="football-psg"><img src="assets/photos/football/psg-01.jpg" alt="PSG"><div class="cat-card-body"><span class="count">16 photos</span><h3>PSG <span class="arrow">↗</span></h3></div></div>
   </div>
@@ -661,36 +668,162 @@
   <div class="back-cta"><a data-link="football" class="btn btn-ghost">← Retour à Football</a></div>
 </div>
 
-<!-- ================= FOOTBALL / OM ================= -->
+<!-- ================= FOOTBALL / OM (sélecteur de match) ================= -->
 <div class="page" data-route="football-om">
   <div class="cat-header">
     <div class="breadcrumb"><a data-link="photo">Photographie</a> <span>/</span> <a data-link="football">Football</a> <span>/</span> <span>OM</span></div>
     <h1>OM</h1>
-    <p>Ambiance, flammes et ferveur au Vélodrome.</p>
+    <p>Ambiance, flammes et ferveur au Vélodrome. Choisissez un match pour voir le reportage complet.</p>
   </div>
-  <div class="gallery-grid" data-gallery="football-om">
-    <div class="gallery-item reveal"><img src="assets/photos/football/om-01.jpg" alt="OM"></div>
-    <div class="gallery-item reveal"><img src="assets/photos/football/om-02.jpg" alt="OM"></div>
-    <div class="gallery-item reveal"><img src="assets/photos/football/om-03.jpg" alt="OM"></div>
-    <div class="gallery-item reveal"><img src="assets/photos/football/om-04.jpg" alt="OM"></div>
-    <div class="gallery-item reveal"><img src="assets/photos/football/om-05.jpg" alt="OM"></div>
-    <div class="gallery-item reveal"><img src="assets/photos/football/om-06.jpg" alt="OM"></div>
-    <div class="gallery-item reveal"><img src="assets/photos/football/om-07.jpg" alt="OM"></div>
-    <div class="gallery-item reveal"><img src="assets/photos/football/om-08.jpg" alt="OM"></div>
-    <div class="gallery-item reveal"><img src="assets/photos/football/om-09.jpg" alt="OM"></div>
-    <div class="gallery-item reveal"><img src="assets/photos/football/om-10.jpg" alt="OM"></div>
-    <div class="gallery-item reveal"><img src="assets/photos/football/om-11.jpg" alt="OM"></div>
-    <div class="gallery-item reveal"><img src="assets/photos/football/om-12.jpg" alt="OM"></div>
-    <div class="gallery-item reveal"><img src="assets/photos/football/om-13.jpg" alt="OM"></div>
-    <div class="gallery-item reveal"><img src="assets/photos/football/om-14.jpg" alt="OM"></div>
-    <div class="gallery-item reveal"><img src="assets/photos/football/om-15.jpg" alt="OM"></div>
-    <div class="gallery-item reveal"><img src="assets/photos/football/om-16.jpg" alt="OM"></div>
-    <div class="gallery-item reveal"><img src="assets/photos/football/om-17.jpg" alt="OM"></div>
-    <div class="gallery-item reveal"><img src="assets/photos/football/om-18.jpg" alt="OM"></div>
-    <div class="gallery-item reveal"><img src="assets/photos/football/om-19.jpg" alt="OM"></div>
-    <div class="gallery-item reveal"><img src="assets/photos/football/om-20.jpg" alt="OM"></div>
+  <div class="cat-grid">
+    <div class="cat-card reveal" data-link="football-om-nice"><img src="assets/photos/football/om-02.jpg" alt="OM - Nice"><div class="cat-card-body"><span class="count">20 photos</span><h3>OM - Nice <span class="arrow">↗</span></h3></div></div>
+    <div class="cat-card reveal" data-link="football-om-strasbourg"><img src="assets/photos/football/om-strasbourg-01.jpg" alt="OM - Strasbourg"><div class="cat-card-body"><span class="count">54 photos</span><h3>OM - Strasbourg <span class="arrow">↗</span></h3></div></div>
+    <div class="cat-card reveal" data-link="football-om-parisfc"><img src="assets/photos/football/om-parisfc-01.jpg" alt="OM - Paris FC"><div class="cat-card-body"><span class="count">33 photos</span><h3>OM - Paris FC <span class="arrow">↗</span></h3></div></div>
   </div>
   <div class="back-cta"><a data-link="football" class="btn btn-ghost">← Retour à Football</a></div>
+</div>
+
+<!-- ================= FOOTBALL / OM / NICE ================= -->
+<div class="page" data-route="football-om-nice">
+  <div class="cat-header">
+    <div class="breadcrumb"><a data-link="photo">Photographie</a> <span>/</span> <a data-link="football">Football</a> <span>/</span> <a data-link="football-om">OM</a> <span>/</span> <span>Nice</span></div>
+    <h1>OM — Nice</h1>
+    <p>Ambiance, flammes et ferveur au Vélodrome.</p>
+  </div>
+  <div class="gallery-grid" data-gallery="football-om-nice">
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-01.jpg" alt="OM - Nice"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-02.jpg" alt="OM - Nice"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-03.jpg" alt="OM - Nice"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-04.jpg" alt="OM - Nice"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-05.jpg" alt="OM - Nice"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-06.jpg" alt="OM - Nice"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-07.jpg" alt="OM - Nice"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-08.jpg" alt="OM - Nice"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-09.jpg" alt="OM - Nice"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-10.jpg" alt="OM - Nice"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-11.jpg" alt="OM - Nice"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-12.jpg" alt="OM - Nice"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-13.jpg" alt="OM - Nice"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-14.jpg" alt="OM - Nice"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-15.jpg" alt="OM - Nice"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-16.jpg" alt="OM - Nice"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-17.jpg" alt="OM - Nice"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-18.jpg" alt="OM - Nice"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-19.jpg" alt="OM - Nice"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-20.jpg" alt="OM - Nice"></div>
+  </div>
+  <div class="back-cta"><a data-link="football-om" class="btn btn-ghost">← Retour à OM</a></div>
+</div>
+
+<!-- ================= FOOTBALL / OM / STRASBOURG ================= -->
+<div class="page" data-route="football-om-strasbourg">
+  <div class="cat-header">
+    <div class="breadcrumb"><a data-link="photo">Photographie</a> <span>/</span> <a data-link="football">Football</a> <span>/</span> <a data-link="football-om">OM</a> <span>/</span> <span>Strasbourg</span></div>
+    <h1>OM — Strasbourg</h1>
+    <p>Reportage complet au Vélodrome pour OM - Strasbourg.</p>
+  </div>
+  <div class="gallery-grid" data-gallery="football-om-strasbourg">
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-01.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-02.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-03.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-04.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-05.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-06.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-07.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-08.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-09.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-10.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-11.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-12.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-13.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-14.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-15.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-16.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-17.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-18.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-19.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-20.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-21.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-22.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-23.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-24.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-25.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-26.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-27.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-28.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-29.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-30.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-31.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-32.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-33.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-34.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-35.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-36.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-37.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-38.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-39.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-40.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-41.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-42.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-43.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-44.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-45.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-46.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-47.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-48.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-49.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-50.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-51.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-52.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-53.jpg" alt="OM - Strasbourg"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-strasbourg-54.jpg" alt="OM - Strasbourg"></div>
+  </div>
+  <div class="back-cta"><a data-link="football-om" class="btn btn-ghost">← Retour à OM</a></div>
+</div>
+
+<!-- ================= FOOTBALL / OM / PARIS FC ================= -->
+<div class="page" data-route="football-om-parisfc">
+  <div class="cat-header">
+    <div class="breadcrumb"><a data-link="photo">Photographie</a> <span>/</span> <a data-link="football">Football</a> <span>/</span> <a data-link="football-om">OM</a> <span>/</span> <span>Paris FC</span></div>
+    <h1>OM — Paris FC</h1>
+    <p>Reportage complet au Vélodrome pour OM - Paris FC.</p>
+  </div>
+  <div class="gallery-grid" data-gallery="football-om-parisfc">
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-parisfc-01.jpg" alt="OM - Paris FC"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-parisfc-02.jpg" alt="OM - Paris FC"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-parisfc-03.jpg" alt="OM - Paris FC"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-parisfc-04.jpg" alt="OM - Paris FC"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-parisfc-05.jpg" alt="OM - Paris FC"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-parisfc-06.jpg" alt="OM - Paris FC"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-parisfc-07.jpg" alt="OM - Paris FC"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-parisfc-08.jpg" alt="OM - Paris FC"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-parisfc-09.jpg" alt="OM - Paris FC"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-parisfc-10.jpg" alt="OM - Paris FC"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-parisfc-11.jpg" alt="OM - Paris FC"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-parisfc-12.jpg" alt="OM - Paris FC"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-parisfc-13.jpg" alt="OM - Paris FC"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-parisfc-14.jpg" alt="OM - Paris FC"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-parisfc-15.jpg" alt="OM - Paris FC"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-parisfc-16.jpg" alt="OM - Paris FC"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-parisfc-17.jpg" alt="OM - Paris FC"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-parisfc-18.jpg" alt="OM - Paris FC"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-parisfc-19.jpg" alt="OM - Paris FC"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-parisfc-20.jpg" alt="OM - Paris FC"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-parisfc-21.jpg" alt="OM - Paris FC"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-parisfc-22.jpg" alt="OM - Paris FC"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-parisfc-23.jpg" alt="OM - Paris FC"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-parisfc-24.jpg" alt="OM - Paris FC"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-parisfc-25.jpg" alt="OM - Paris FC"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-parisfc-26.jpg" alt="OM - Paris FC"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-parisfc-27.jpg" alt="OM - Paris FC"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-parisfc-28.jpg" alt="OM - Paris FC"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-parisfc-29.jpg" alt="OM - Paris FC"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-parisfc-30.jpg" alt="OM - Paris FC"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-parisfc-31.jpg" alt="OM - Paris FC"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-parisfc-32.jpg" alt="OM - Paris FC"></div>
+    <div class="gallery-item reveal"><img src="assets/photos/football/om-parisfc-33.jpg" alt="OM - Paris FC"></div>
+  </div>
+  <div class="back-cta"><a data-link="football-om" class="btn btn-ghost">← Retour à OM</a></div>
 </div>
 
 <!-- ================= FOOTBALL / LA GALAXY ================= -->
@@ -1153,7 +1286,7 @@
   }
 
   const photoCategories = [
-    'photo','football','football-argentine','football-atalanta','football-om','football-la-galaxy','football-psg',
+    'photo','football','football-argentine','football-atalanta','football-om','football-om-nice','football-om-strasbourg','football-om-parisfc','football-la-galaxy','football-psg',
     'basketball','tennis','tennis-uts-nimes','tennis-atp-occitanie',
     'entreprise','entreprise-chez-castel','entreprise-esprit-pc','musique','paysages','lifestyle'
   ];
